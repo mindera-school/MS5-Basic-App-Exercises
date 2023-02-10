@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capybara Menus</title>
+</head>
+
+<body>
+    <header>
+        <h1>Capybara Menus</h1>
+        <button id="sideMenuButton" class="sideButton"><img src="/icons/list.svg"></button>
+        <div id="sidebar">
+            <button id="closeSidebar" class="sideButton"><img src="/icons/list.svg"></button>
+            <label for="language">Choose your language</label>
+            <select name="language" id="lang">
+                <option value="English">English</option>
+                <option value="Português">Português</option>
+                <option value="Español">Español</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <button class="tablinks" id="homeLink" value="home">Home</button>
+            <button class="tablinks" id="galleryLink" value="gallery">Gallery</button>
+            <button class="tablinks" id="adpteLink" value="adopte">Adopte</button>
+        </nav>
+
+        <div class="tabcontent" id="home">
+            <div id="capygrid">
+                <div class="capyCard" id="catCapy">
+                    <img src="/images/cat.png" alt="Capybara with a cat">
+                    <div>Cat Capybara</div>
+                </div>
+                <div class="capyCard">
+                    <img src="/images/love.png" alt="Falling in love capybaras">
+                    <div>Falling in love Capybaras</div>
+                </div>
+                <div class="capyCard">
+                    <img src="/images/edsheeran.png" alt="Ed sheeran capybara">
+                    <div>Ed Sheeran Capybara</div>
+                </div>
+                <div class="capyCard">
+                    <img src="/images/orange.png" alt="Orange capybara">
+                    <div>Orange Capybara</div>
+                </div>
+                <div class="capyCard">
+                    <img src="/images/rainbow.png" alt="Rainbow capybara">
+                    <div>Rainbow Capybara</div>
+                </div>
+                <div class="capyCard">
+                    <img src="/images/baby.png" alt="Baby capybara">
+                    <div>Baby Capybara</div>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent" id="gallery">
+            <h3>flavour</h3>
+        </div>
+
+        <div class="tabcontent" id="adopte">
+            flavour
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="script.js"></script>
