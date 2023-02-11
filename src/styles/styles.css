@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "Calculator";
+  src: url("../fonts/Calculator.ttf");
+}
+@font-face {
+  font-family: "DarkSouls";
+  src: url("../fonts/OptimusPrinceps.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #sideNavBut {
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  left: 97%;
+  transition: 0.5s;
+}
+main #sideNavBut:hover {
+  color: #818181;
+}
+
+.sidenav {
+  display: flex;
+  color: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav label {
+  font-size: 32px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 4px;
+  border-bottom: 4px solid white;
+}
+.sidenav select {
+  display: block;
+  outline: none;
+  border: 0;
+  padding-bottom: 7px;
+  padding-right: 5px;
+  border-bottom: 4px solid white;
+  font-size: 28px;
+  color: #818181;
+  background-color: black;
+}
+.sidenav a {
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav #closeBut {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav #closeBut:hover {
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+.tab {
+  display: flex;
+  width: 80vw;
+  height: 7vh;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: #F5F5F5;
+  justify-content: space-between;
+}
+.tab .tabLinks {
+  border: 0;
+  width: 26vw;
+  border-radius: 35px;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+.tab .tabLinks:hover {
+  background-color: #f2f9ff;
+}
+.tab .tabLinks_active {
+  border: 0;
+  width: 26vw;
+  border-radius: 35px;
+  color: white;
+  background-color: #0D99FF;
+}
+
+.tabs {
+  width: 80vw;
+  height: 76vh;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: #F5F5F5;
+}
+
+#cookieClickerTab #game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#cookieClickerTab #game #cookieBtns {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+#cookieClickerTab #game #cookieBtns .cookieBtn {
+  width: 20vw;
+  height: 20vw;
+}
+#cookieClickerTab #game #cookieBtns .cookieBtn:hover {
+  width: 21vw;
+  height: 21vw;
+}
+#cookieClickerTab #game #cookieBtns .cookieBtn:active {
+  width: 20vw;
+  height: 20vw;
+}
+#cookieClickerTab .modalBlocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+#cookieClickerTab #myModal {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  left: 25%;
+  top: 50%;
+  width: 50vw;
+  height: 20vw;
+  border: 5px solid #0D99FF;
+  border-radius: 5px;
+  background-color: #f2f9ff;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  z-index: 4;
+}
+#cookieClickerTab #myModal span {
+  justify-content: center;
+  font-family: "DarkSouls";
+  font-weight: bold;
+  font-size: 5vw;
+  height: 100%;
+}
+#cookieClickerTab #myModal #closeModal {
+  top: 0;
+  align-self: flex-end;
+  font-size: 30px;
+  color: black;
+  background-color: transparent;
+  border: 0;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+#cookieClickerTab #myModal #closeModal:hover {
+  cursor: pointer;
+  color: rgb(128, 128, 128);
+}
+
+#carrocelTab {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#carrocelTab .slideshow {
+  max-width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#carrocelTab .slideshow .mySlides {
+  display: none;
+  justify-content: center;
+}
+#carrocelTab .slideshow .mySlides img {
+  max-width: 1000px;
+  border: 1px solid black;
+  position: relative;
+  box-shadow: 2px 2px 15px 5px black;
+  width: 90%;
+  border-radius: 15px;
+}
+#carrocelTab .slideshow .mySlides .capText {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#carrocelTab .slideshow .mySlides .numberText {
+  color: white;
+  top: 0;
+  left: 4.98%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px 0 15px 0;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  text-align: center;
+}
+#carrocelTab .slideshow .prev,
+#carrocelTab .slideshow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+#carrocelTab .slideshow .prev:hover,
+#carrocelTab .slideshow .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#carrocelTab .slideshow .next {
+  right: 0;
+  border-radius: 3px;
+}
+#carrocelTab .slideshow .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#carrocelTab .dots {
+  position: relative;
+  top: 0;
+}
+#carrocelTab .dots .dot,
+#carrocelTab .dots .active {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#carrocelTab .dots .dot:hover {
+  background-color: #c4c4c4;
+}
+#carrocelTab .dots .active {
+  background-color: #717171;
+}
+
+#calculatorTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculatorTab .calculator {
+  position: absolute;
+  width: 22vw;
+  height: 33.5vw;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: #ADADAD;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 15px 5px gray;
+  border: 1px solid black;
+}
+#calculatorTab .calculator .display {
+  width: 100%;
+  box-sizing: border-box;
+  height: 5vw;
+  font-size: 3.5vw;
+  text-align: right;
+  font-weight: bold;
+  font-family: "Calculator";
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+  padding: 0.4vw;
+  border-radius: 20px;
+  color: forestgreen;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+#calculatorTab .calculator div button {
+  color: white;
+  width: 4.5vw;
+  height: 4.5vw;
+  border: 0;
+  border-radius: 14px;
+  font-size: 2vw;
+}
+#calculatorTab .calculator div {
+  margin-top: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+#calculatorTab .calculator #firstRow button {
+  background-color: #757575;
+  transition: 0.5s;
+}
+#calculatorTab .calculator #firstRow button:hover {
+  background-color: #909090;
+}
+#calculatorTab .calculator #firstRow :last-child {
+  background-color: #FFCD29;
+  transition: 0.5s;
+}
+#calculatorTab .calculator #firstRow :last-child:hover {
+  background-color: #ffe693;
+}
+#calculatorTab .calculator div #numZero {
+  width: 9.5vw;
+}
+#calculatorTab .calculator div button {
+  background-color: black;
+  transition: 0.5s;
+}
+#calculatorTab .calculator div button:hover {
+  background-color: rgb(58, 58, 58);
+}
+#calculatorTab .calculator div :last-child {
+  background-color: #FFCD29;
+  transition: 0.5s;
+}
+#calculatorTab .calculator div :last-child:hover {
+  background-color: #ffe693;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Menus</title>
+</head>
+
+<body>
+    <div id="sideNav" class="sidenav">
+        <a id="closeBut">&times;</a>
+        <label for="languages" id="textLanguage"></label>
+
+        <select name="languages" id="languages">
+            <option value="english" id="textEnglish"></option>
+            <option value="portuguese" id="textPortuguese"></option>
+        </select>
+    </div>
+    <div class="blocker"></div>
+
+    <main>
+        <span id="sideNavBut">&#9776;</span>
+        <div class="tab">
+            <button class="tabLinks" id="cookieClickerBut" name="tabButs"></button>
+            <button class="tabLinks" id="carrocelBut" name="tabButs"></button>
+            <button class="tabLinks" id="calculatorBut" name="tabButs"></button>
+        </div>
+
+        <div class="tabs" id="cookieClickerTab">
+            <div id="game">
+                <span id="points">0</span>
+                <div id="cookieBtns">
+                    <img src="./src/images/cookie.png" alt="Just a cookie" class="cookieBtn">
+                    <img src="./src/images/cookie.png" alt="Just a cookie" class="cookieBtn">
+                    <img src="./src/images/cookie.png" alt="Just a cookie" class="cookieBtn">
+                </div>
+            </div>
+            <div id="myModal">
+                <button id="closeModal">&times;</button>
+                <span id="modalText"></span>
+            </div>
+            <div class="modalBlocker"></div>
+        </div>
+
+
+        <div class="tabs" id="carrocelTab">
+            <div class="slideshow">
+                <div class="mySlides fade">
+                    <img src="./src/images/Broccoli.png" alt="A broccoli with a light from above">
+                    <div class="numberText">1 / 3</div>
+                    <div class="capText" id="firstImageCap"></div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./src/images/Brazilian_exotic_dancer.png"
+                        alt="Brazilian exotic dancer guy on a butcher shop">
+                    <div class="numberText">2 / 3</div>
+                    <div class="capText" id="secondImageCap"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./src/images/Bus_on_a_rainy_day.png"
+                        alt="Looking at a bus through a rain-streaked window on a rainy night.">
+                    <div class="numberText">3 / 3</div>
+                    <div class="capText" id="thirdImageCap"></div>
+                </div>
+
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+            <br>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+
+        <div class="tabs" id="calculatorTab">
+            <div class="calculator">
+                <div class="display"></div>
+                <div id="firstRow">
+                    <button id="clean">C</button>
+                    <button id="posNeg">&#177</button>
+                    <button id="percentage">%</button>
+                    <button id="division">&#247</button>
+                </div>
+                <div id="secondRow">
+                    <button id="numSeven">7</button>
+                    <button id="numEight">8</button>
+                    <button id="numNine">9</button>
+                    <button id="multiplication">&#xD7</button>
+                </div>
+                <div id="thirdRow">
+                    <button id="numFour">4</button>
+                    <button id="numFive">5</button>
+                    <button id="numSix">6</button>
+                    <button id="subtraction">&#x2212</button>
+                </div>
+                <div id="fourthRow">
+                    <button id="numOne">1</button>
+                    <button id="numTwo">2</button>
+                    <button id="numThree">3</button>
+                    <button id="sum">+</button>
+                </div>
+                <div id="fifthRow">
+                    <button id="numZero">0</button>
+                    <button id="comma">,</button>
+                    <button id="result">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./src/data/languages.json"></script>
+    <script type="text/javascript" src="./src/scripts/languageScript.js"></script>
+    <script src="./src/scripts/tabMenuScript.js"></script>
+    <script src="./src/scripts/activeButtonScript.js"></script>
+    <script src="./src/scripts/sideBarScript.js"></script>
+    <script src="./src/scripts/slideshowScript.js"></script>
+    <script src="./src/scripts/calculator.js"></script>
+    <script src="./src/scripts/cookieClickerScript.js"></script>
+    <script src="./src/scripts/modalScript.js"></script>
+</body>
+
+</html>

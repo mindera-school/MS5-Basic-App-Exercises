@@ -1,0 +1,32 @@
+{
+    "english": {
+        "textLanguage": "Language: ",
+        "textPortuguese": "Portuguese",
+        "textEnglish": "English",
+
+        "firstTabButton": "Cookie Clicker",
+        "secondTabButton": "Carousel",
+        "thirdTabButton": "Calculator",
+
+        "firstImageCap": "Created By Gabi on MidJourney Bot",
+        "secondImageCap": "Created By Leo on MidJourney Bot",
+        "thirdImageCap": "Created By Rocha on MidJourney Bot",
+
+        "modalText": "You have Virus"
+    },
+    "portuguese": {
+        "textLanguage": "Linguagem: ",
+        "textPortuguese": "Portugues",
+        "textEnglish": "Ingles",
+
+        "firstTabButton": "Clicker de Cookies",
+        "secondTabButton": "Carrossel",
+        "thirdTabButton": "Calculadora",
+
+        "firstImageCap": "Criado por Gabi no Bot MidJourney",
+        "secondImageCap": "Criado por Leo no Bot MidJourney",
+        "thirdImageCap": "Criado por Rocha no Bot MidJourney",
+
+        "modalText": "Tens Virus"
+    }
+}
