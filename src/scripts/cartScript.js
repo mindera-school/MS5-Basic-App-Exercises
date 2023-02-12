@@ -24,11 +24,11 @@ class Item {
 const quackman = new Item("storeImgs/0B34F818-81BD-4EEC-90BF-A01F47B8AC57.jpeg", "QuackMan", "17.99");
 const quacktopus = new Item("storeImgs/23206NEW_grande.webp", "Quacktopus", "18.99");
 const classyDuck = new Item("storeImgs/31001_white_hot_safety_bath_ducky.jpeg", "ClassyDuck", "4.99");
-const quickit = new Item("storeImgs/63d35d04fbc549b7a482b7eb45ba3ca7xl.webp", "Quickit", "17,99");
-const quackuaman = new Item("storeImgs/dc-comics-paladone-aquaman-rubber-duck.jpeg", "Quackuaman", "5,99");
-const quackespeare = new Item("storeImgs/IMG_0524.jpeg", "Quackespeare", "6,99");
-const duckyliberty = new Item("storeImgs/liberty-rubber-duck-leaning.jpeg", "Ducky Liberty", "8,99");
-const duckyoda = new Item("storeImgs/joda-rubber-duck.jpg.webp", "Duckyoda", "18,99");
+const quickit = new Item("storeImgs/63d35d04fbc549b7a482b7eb45ba3ca7xl.webp", "Quickit", "17.99");
+const quackuaman = new Item("storeImgs/dc-comics-paladone-aquaman-rubber-duck.jpeg", "Quackuaman", "5.99");
+const quackespeare = new Item("storeImgs/IMG_0524.jpeg", "Quackespeare", "6.99");
+const duckyliberty = new Item("storeImgs/liberty-rubber-duck-leaning.jpeg", "Ducky Liberty", "8.99");
+const duckyoda = new Item("storeImgs/joda-rubber-duck.jpg.webp", "Duckyoda", "18.99");
 const duckStorage = [];
 
 window.addEventListener("load", () => {
