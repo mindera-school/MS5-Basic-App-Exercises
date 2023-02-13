@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "roboto", sans-serif;
 }
 
 body {
@@ -15,6 +17,7 @@ header {
   width: 100vw;
   margin-bottom: 1vh;
   position: relative;
+  font-family: "roboto slab", serif;
 }
 header h1 {
   font-size: 25px;
@@ -96,6 +99,7 @@ main nav button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 #sidebar button {
   position: absolute;
@@ -115,12 +119,171 @@ main nav button {
   transition: background 0.5s;
 }
 
-.tablinks:focus {
-  background-color: #2e3532;
+.tablinks.active {
+  display: blocks;
 }
 
 .tabcontent {
   display: none;
+}
+
+#adopt {
+  position: absolute;
+}
+#adopt form {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 10vh;
+  max-width: 20vw;
+  border: 1px solid #67796c;
+  background-color: #7e9181;
+  border-radius: 5px;
+  padding: 10%;
+}
+#adopt form img {
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  top: -5%;
+  left: 65%;
+}
+#adopt form div {
+  margin-top: 2vh;
+}
+#adopt form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #67796c;
+  outline: none;
+}
+#adopt form #fieldWhy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+#adopt form #fieldWhy input {
+  margin-top: 1vh;
+  width: 30vw;
+  height: 15vh;
+  border: 1px solid #67796c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+}
+#adopt #submit {
+  align-self: center;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: none;
+  transition-property: border-color, border-color;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  border-color: #67796c;
+  border-width: 2px;
+  border-style: solid;
+}
+#adopt #submit :hover {
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#modal {
+  display: none;
+  width: 30vw;
+  height: fit-content;
+  background-color: #7e9181;
+  border: 1px solid #67796c;
+  border-radius: 5px;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  z-index: 1;
+}
+#modal #modalContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modal #modalContent p {
+  width: 80%;
+  text-align: center;
+  font-size: 2.1vw;
+  color: #fff;
+}
+#modal #modalContent button {
+  align-self: center;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: none;
+  transition-property: border-color, border-color;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  border-color: #67796c;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+#closeModal {
+  background: none;
+  border: none;
+}
+
+.carrossel {
+  height: 50vh;
+  width: 40vw;
+  border: 2px solid #67796c;
+  border-radius: 5px;
+  background-color: #7e9181;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+}
+
+.gallery-image {
+  display: none;
+}
+.gallery-image img {
+  max-width: 85%;
+  height: object-fit;
+}
+
+.galleryNavButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#block {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.271);
 }
 
 /*# sourceMappingURL=style.css.map */

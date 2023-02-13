@@ -10,16 +10,17 @@
 </head>
 
 <body>
+    <div id="block"></div>
     <header>
-        <h1>Capybara Menus</h1>
+        <h1 id="title">Capybaras</h1>
         <button id="sideMenuButton" class="sideButton"><img src="/icons/list.svg"></button>
         <div id="sidebar">
             <button id="closeSidebar" class="sideButton"><img src="/icons/list.svg"></button>
             <label for="language">Choose your language</label>
             <select name="language" id="lang">
-                <option value="English">English</option>
-                <option value="Português">Português</option>
-                <option value="Español">Español</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
             </select>
         </div>
     </header>
@@ -27,43 +28,94 @@
         <nav>
             <button class="tablinks" id="homeLink" value="home">Home</button>
             <button class="tablinks" id="galleryLink" value="gallery">Gallery</button>
-            <button class="tablinks" id="adpteLink" value="adopte">Adopte</button>
+            <button class="tablinks" id="adoptLink" value="adopt">Adopt</button>
         </nav>
 
         <div class="tabcontent" id="home">
             <div id="capygrid">
                 <div class="capyCard" id="catCapy">
                     <img src="/images/cat.png" alt="Capybara with a cat">
-                    <div>Cat Capybara</div>
+                    <div id="cat-text">Capybara with a cat</div>
                 </div>
                 <div class="capyCard">
                     <img src="/images/love.png" alt="Falling in love capybaras">
-                    <div>Falling in love Capybaras</div>
+                    <div id="love-text">Falling in love Capybaras</div>
                 </div>
                 <div class="capyCard">
                     <img src="/images/edsheeran.png" alt="Ed sheeran capybara">
-                    <div>Ed Sheeran Capybara</div>
+                    <div id="ed-text">Ed Sheeran Capybara</div>
                 </div>
                 <div class="capyCard">
                     <img src="/images/orange.png" alt="Orange capybara">
-                    <div>Orange Capybara</div>
+                    <div id="orange-text">Orange Capybara</div>
                 </div>
                 <div class="capyCard">
                     <img src="/images/rainbow.png" alt="Rainbow capybara">
-                    <div>Rainbow Capybara</div>
+                    <div id="rainbow-text">Rainbow Capybara</div>
                 </div>
                 <div class="capyCard">
                     <img src="/images/baby.png" alt="Baby capybara">
-                    <div>Baby Capybara</div>
+                    <div id="baby-text">Baby Capybara</div>
                 </div>
             </div>
         </div>
         <div class="tabcontent" id="gallery">
-            <h3>flavour</h3>
+            <div class="carrossel">
+                <div class="gallery-image">
+                    <img src="/images/baby.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/cat.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/edsheeran.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/love.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/orange.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/rainbow.png">
+                </div>
+                <div class="gallery-image">
+                    <img src="/images/suit.png">
+                </div>
+                <button class="galleryNavButton" id="prev">
+                    <img src="/icons/caret-left.svg">
+                </button>
+                <button class="galleryNavButton" id="next">
+                    <img src="/icons/caret-right.svg">
+                </button>
+            </div>
         </div>
 
-        <div class="tabcontent" id="adopte">
-            flavour
+        <div class="tabcontent" id="adopt">
+            <div id="modal">
+                <button id="closeModal"><img src="icons/x.svg"></button>
+                <div id="modalContent">
+                    <p id="modalText"></p>
+                    <button id="modal-ok">ok</button>
+                </div>
+            </div>
+            <form id="adopteForm">
+                <img src="/images/suit.png">
+                <div id="fieldName">
+                    <label for="Name" id="nameLabel">Name:</label>
+                    <input type="text" name="Name" id="name" maxlength="100" required>
+                </div>
+                <div id="fieldEmail">
+                    <label for="Email" id="emailLabel">Email:</label>
+                    <input type="email" name="Email" id="email" placeholder="sample@email.com" required>
+                </div>
+
+                <div id="fieldWhy">
+                    <label for="Why" id="whyLabel">Why do you want a capybara?</label>
+                    <input type="text" name="Why" id="why" maxlength="200" required>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
         </div>
     </main>
 </body>
