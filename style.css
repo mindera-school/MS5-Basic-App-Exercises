@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #0353a4;
+  font-size: 55px;
+}
+#color-h1 {
+  color: #023e7d;
+}
+body {
+  background-image: url("./img/background.jpeg");
+}
+#overlay {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#roni-gif-modal {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: #0096c7;
+  font-size: 100px;
+  color: white;
+  width: 70%;
+}
+#roni-gif-modal button {
+  background-color: transparent;
+  border: transparent;
+  color: red;
+  font-size: 120px;
+  z-index: 1;
+    cursor: pointer;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+}
+
+#fora {
+  width: 75%;
+  height: 75vh;
+  border: 10px solid #0096c7;
+  border-radius: 20px 20px 15px 0px;
+  background: #023e8a;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+  height: 9%;
+}
+.nav button {
+  transition: 0.5s;
+  border-radius: 10px;
+  background: transparent;
+  width: 55%;
+  height: 100%;
+  font-size: 30px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+.nav button:hover {
+  background: #90e0ef;
+  width: 55%;
+  height: 100%;
+  font-size: 30px;
+  border: 0;
+  color: black;
+}
+#box {
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+#stats {
+  display: none;
+  justify-content: center;
+  width: 99.7%;
+  height: 50%;
+}
+#stats-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+#image {
+  width: 50%;
+  height: 35%;
+}
+#shirt-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99.7%;
+  height: 50%;
+}
+#shirt-box button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.size {
+  border: 2px solid #00b4d8;
+  width: 15vw;
+  height: 27vh;
+}
+#shirt-box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#shirt-box2 button {
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Clubs */
+#clubs {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#club-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99.7%;
+  height: 50%;
+}
+#club-box img {
+  display: block;
+}
+#club-box button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.size-club {
+  transition: 1s;
+  border: 2px solid #00b4d8;
+  width: 15vw;
+  height: 26vh;
+}
+
+#club-box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#club-box2 img {
+  display: block;
+}
+#club-box2 button {
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.align-carrossel {
+  display: flex;
+  justify-content: center;
+}
+/* Sp */
+#box-carrossel-sp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: -10vh;
+}
+#box-carrossel-sp button {
+  transition: 0.5s;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#box-carrossel-sp button:hover {
+  background: #90e0ef;
+  border-radius: 70px;
+  opacity: 60%;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+
+/* real */
+#box-carrossel-real {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+.align-carrossel-sp {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.align-carrossel {
+  display: flex;
+  justify-content: center;
+}
+
+#box-carrossel-real button {
+  transition: 0.5s;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#box-carrossel-real button:hover {
+  background: #90e0ef;
+  border-radius: 70px;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+
+/* United */
+#box-carrossel-united {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+
+#box-carrossel-united button {
+  transition: 0.5s;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#box-carrossel-united button:hover {
+  background: #90e0ef;
+  border-radius: 70px;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#diminuir {
+  width: 35vw;
+  height: 65vh;
+}
+
+/*Portugal*/
+
+#box-carrossel-portugal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+
+#box-carrossel-portugal button {
+  transition: 0.5s;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#box-carrossel-portugal button:hover {
+  background: #90e0ef;
+  border-radius: 70px;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+
+/*Juventus*/
+
+#box-carrossel-juventus {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+
+#box-carrossel-juventus button {
+  transition: 0.5s;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
+#box-carrossel-juventus button:hover {
+  background: #90e0ef;
+  border-radius: 70px;
+  border: 0px;
+  cursor: pointer;
+  width: 3%;
+  height: 5vh;
+  margin-top: 24vh;
+}
