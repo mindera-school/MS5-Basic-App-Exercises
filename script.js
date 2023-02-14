@@ -7,6 +7,10 @@ const divStats = document.getElementById("stats");
 const fechar = document.getElementById("close");
 const modal = document.getElementById("roni-gif-modal");
 const overlay = document.getElementById("overlay");
+const modalLanguage = document.getElementById("language");
+const closebtn = document.getElementById("close-btn");
+const btnlateral = document.getElementById("menu-lateral");
+
 
 
 
@@ -60,7 +64,7 @@ btnClub.addEventListener("click", () => {
 
 });
 btnStats.addEventListener("click", () => {
-    divStats.style.display = "block";
+    divStats.style.display = "none";
     btnStats.style.color = "black";
     btnStats.style.background = "#90e0ef";
     overlay.style.display = "block";
@@ -86,9 +90,20 @@ btnStats.addEventListener("click", () => {
 fechar.addEventListener("click", () => {
     overlay.style.display = "none";
     modal.style.display = "none";
+    divStats.style.display = "block";
+
+});
+btnlateral.addEventListener("click", () => {
+    overlay.style.display = "block";
+    modalLanguage.style.display = "block";
 
 });
 
+closebtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+    modalLanguage.style.display = "none";
+
+});
 
 
 

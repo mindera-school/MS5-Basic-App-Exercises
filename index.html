@@ -10,11 +10,36 @@
 </head>
 
 <body>
+    <header>
+        <div></div>
+        <h1>RONI<span id="color-h1">HUB</span></h1>
+        <button id="menu-lateral"><img src="./img/menu.svg"></img></button>
+    </header>
 
-    <h1>RONI<span id="color-h1">HUB</span></h1>
     <div id="overlay">
     </div>
+    <div class="language" id="language">
+        <button id="close-btn">Close </button>
+        <div id="ajustes">
+            <select name="laguage" id="language-options">
+                <option value="portugues">portugues</option>
+                <option value="english">english</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+        </div>
+    </div>
+
+
+
     <div id="content">
+        <div class="language" id="language">
+            <button class="close-btn">Close &times;</button>
+            <select name="laguage" id="language-options">
+                <option value="portugues">portugues</option>
+                <option value="english">english</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+        </div>
         <div id="fora">
             <div class="nav">
                 <button id="shirt">Shirts</button>
@@ -39,24 +64,65 @@
 
             <div id="clubs">
                 <div id="club-box">
-                    <button><img id="real" class="size-club" src="./img/real-madrid-logo.png"></button>
-                    <button><img id="juve" class="size-club" src="./img/Juventus-logo.png"></button>
-                    <button><img id="spt" class="size-club" src="./img/Sporting-logo.png"></button>
+                    <button id="real-logo"><img class="size-club" src="./img/real-madrid-logo.png"></button>
+                    <div class="stats-real-none" id="stats-real">
+                        <p>Goals:451
+                            <br>
+                            Assist: 131
+                        </p>
+
+                    </div>
+                    <button id="juve-logo"><img id="juve-logo" class="size-club" src="./img/Juventus-logo.png"></button>
+                    <div class="stats-juve-none" id="stats-juve">
+                        <p>Goals:101
+                            <br>
+                            Assist: 50
+                        </p>
+                    </div>
+                    <button id="spt-logo"><img class="size-club" src="./img/Sporting-logo.png"></button>
+                    <div class="stats-sp-none" id="stats-sp">
+                        Goals:23
+                        <br>
+                        Assist: 2
+                    </div>
                 </div>
                 <div id="club-box2">
 
-                    <button><img id="manu" class="size-club" src="./img/united-logo.png"></button>
-                    <button><img id="al" class="size-club" src="./img/AlNassr-logo.png"></button>
-                    <button><img id="pt" class="size-club" src="./img/portugal-logo.png"></button>
+                    <button id="manu-logo"><img class="size-club" src="./img/united-logo.png"></button>
+                    <div class="stats-manu-none" id="stats-manu">
+                        <p>Goals:170
+                            <br>
 
+                            Assist: 60
+                        </p>
+                    </div>
+                    <button id="al-logo"><img class="size-club" src="./img/AlNassr-logo.png"></button>
+                    <div class="stats-al-none" id="stats-al">
+                        <p>Goals:5
+                            <br>
+                            Assist: 1
+                        </p>
+                    </div>
+                    <button id="pt-logo"><img class="size-club" src="./img/portugal-logo.png"></button>
+                    <div class="stats-pt-none" id="stats-pt">Goals:118
+                        <br>
+                        Assist: 70
+                    </div>
                 </div>
             </div>
+
+
+
+
 
 
             <div id="stats">
                 <div id="stats-box">
                     <img id="image" src="./img/roniii.gif">
                 </div>
+            </div>
+            <div id="roni-gif-modal">
+                vais ver alto video <button id="close">X</button>
             </div>
 
 
@@ -108,14 +174,13 @@
             </div>
         </div>
     </div>
-    <div id="roni-gif-modal">
-        vais ver alto video <button id="close">X</button>
+    <div>
+
     </div>
 
-
 </body>
-<script src="carrossel.js"></script>
 <script src="clubs.js"></script>
+<script src="carrossel.js"></script>
 <script src="script.js"></script>
 
 </html>
