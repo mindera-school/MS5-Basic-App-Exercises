@@ -16,7 +16,7 @@ button {
   cursor: pointer;
   background-color: transparent;
 
-  &:hover{
+  &:hover {
     scale: 1.1;
   }
 }
@@ -26,7 +26,14 @@ button {
   src: url("/font/SuperMario256.ttf");
 }
 
-#lateralDiv{
+@mixin tab-style($bg-color, $display) {
+  background-color: $bg-color;
+  display: $display;
+  justify-content: center;
+  align-items: center;
+}
+
+#lateralDiv {
   padding: 15px;
   display: none;
   position: fixed;
@@ -38,13 +45,13 @@ button {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
 
-  #close{
+  #close {
     position: absolute;
     top: 15px;
     left: 15px;
   }
 
-  #language{
+  #language {
     position: absolute;
     top: 45px;
     right: 45px;
@@ -53,7 +60,7 @@ button {
     background-color: rgb(188, 188, 188);
   }
 
-  #dance{
+  #dance {
     position: absolute;
     opacity: 95%;
     top: 35%;
@@ -70,30 +77,23 @@ button {
   width: 70%;
   height: 70%;
   display: flex;
-  justify-content: center;;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  
   #firstTabs {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include tab-style(red, flex);
   }
+  
   #secondTabs {
-    background-color: yellow;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include tab-style(yellow, none);
   }
+  
   #thirdTabs {
-    background-color: green;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include tab-style(green, none);
   }
+  
 }
-
 
 #changeImage {
   width: 20%;
@@ -130,7 +130,6 @@ button {
 
 #organizerAdds {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -166,38 +165,38 @@ button {
   justify-content: center;
   align-items: center;
 
-  #langQuote{
+  #langQuote {
     font-family: superMario;
   }
 
-  #closeModal{
+  #closeModal {
     position: absolute;
     top: 10%;
     left: 5%;
   }
 }
 
-#pipe{
+#pipe {
   scale: 1.4;
 }
 
-#music{
+#music {
   display: none;
 }
 
-#left{
+#left {
   transform: rotate(-90deg);
 }
 
-#right{
+#right {
   transform: rotate(90deg);
 }
 
-#donkeyKong{
+#donkeyKong {
   cursor: pointer;
 }
 
-.mushroom{
+.mushroom {
   height: 100px;
 }
 
@@ -210,6 +209,6 @@ button {
   height: 100%;
 }
 
-.imageButton{
+.imageButton {
   height: 60px;
 }

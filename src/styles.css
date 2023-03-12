@@ -16,6 +16,7 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
+
 button:hover {
   scale: 1.1;
 }
@@ -24,6 +25,7 @@ button:hover {
   font-family: superMario;
   src: url("/font/SuperMario256.ttf");
 }
+
 #lateralDiv {
   padding: 15px;
   display: none;
@@ -36,19 +38,22 @@ button:hover {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 #lateralDiv #close {
   position: absolute;
   top: 15px;
   left: 15px;
 }
+
 #lateralDiv #language {
   position: absolute;
   top: 45px;
   right: 45px;
   border-radius: 5px;
   padding: 4px;
-  background-color: rgb(188, 188, 188);
+  background-color: #bcbcbc;
 }
+
 #lateralDiv #dance {
   position: absolute;
   opacity: 95%;
@@ -69,18 +74,21 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
+
 #tabs #firstTabs {
   background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #tabs #secondTabs {
   background-color: yellow;
   display: none;
   justify-content: center;
   align-items: center;
 }
+
 #tabs #thirdTabs {
   background-color: green;
   display: none;
@@ -124,7 +132,6 @@ button:hover {
 
 #organizerAdds {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -161,9 +168,11 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
 #secondModal #langQuote {
   font-family: superMario;
 }
+
 #secondModal #closeModal {
   position: absolute;
   top: 10%;
@@ -206,5 +215,3 @@ button:hover {
 .imageButton {
   height: 60px;
 }
-
-/*# sourceMappingURL=styles.css.map */
