@@ -23,7 +23,7 @@ button {
 
 @font-face {
   font-family: superMario;
-  src: url("/font/SuperMario256.ttf");
+  src: url("./font/SuperMario256.ttf");
 }
 
 @mixin tab-style($bg-color, $display) {
