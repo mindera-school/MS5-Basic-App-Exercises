@@ -53,10 +53,10 @@ tabs.forEach((tab, index) => {
   });
 });
 
-next.addEventListener("click", () => changeImage(1));
-before.addEventListener("click", () => changeImage(-1));
+next.addEventListener("click", () => changeImageArray(1));
+before.addEventListener("click", () => changeImageArray(-1));
 
-function changeImage(delta) {
+function changeImageArray(delta) {
   counter += delta;
   if (counter < 0) {
     counter = images.length - 1;
@@ -65,26 +65,6 @@ function changeImage(delta) {
   }
   changeImage.src = images[counter];
 }
-
-
-/*next.addEventListener("click", () => {
-  if (counter < images.length - 1) {
-    counter++;
-    changeImage.src = images[counter];
-  } else {
-    counter = 0;
-    changeImage.src = images[counter];
-  }
-});
-before.addEventListener("click", () => {
-  if (counter > 0) {
-    counter--;
-    changeImage.src = images[counter];
-  } else {
-    counter = images.length - 1;
-    changeImage.src = images[counter];
-  }
-});*/
 
 closet.addEventListener("mouseenter", () => {
   closetMario.style.transform = "rotate(60deg) translate(30%)";
@@ -114,9 +94,9 @@ language.addEventListener("change", () => {
 function switchLanguage(lang) {
   const trans = {
     en: "this doesn't really work in english.",
-    pt: "Mario? Aquele que te comeu atras do armario.",
+    pt: "Mario? Aquele atrás do armario.",
     cn: "读白 不要忘记 不要错过 记得去电影院看《速度与激情9 因为非常好电影 动作非常好 差不多一样冰淇淋 再见",
-  }
+  };
   const langQuote = document.getElementById("langQuote");
   langQuote.innerHTML = trans[lang];
 }
